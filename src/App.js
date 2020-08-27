@@ -18,7 +18,7 @@ const items = [
     const options = [
       {
        label: 'Red',
-       value: 'red'
+       color: 'red'
     },
     {
       label: 'Green',
