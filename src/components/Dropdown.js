@@ -7,6 +7,10 @@ const Dropdown = ({ options, selected, onSelectedChange }) => {
     // Using the useRef Hook to deal with event bubbling.
     // When clicking out of the dropdown menu we still want the
     // app to be able to close the menu.
+    // Also added the onBodyClick function to dealt with the 
+    // situation where you remove a DOM element that has an associated
+    // event listener that would give you errors if evoked after the
+    // element has been removed.
     useEffect(() => {
         const onBodyClick = (event) => {
             if (ref.current.contains(event.target)) {
