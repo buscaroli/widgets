@@ -27,11 +27,11 @@ const Dropdown = ({ label, options, selected, onSelectedChange }) => {
         }
     }, [])
 
-    const renderedOptions = options.map( option => {
+    const renderedOptions = options.map( (option, index) => {
         
         return(
             <div 
-                key={option.value} 
+                key={index} 
                 className="item"
                 onClick={() => onSelectedChange(option)}
             >

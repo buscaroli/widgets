@@ -20,7 +20,7 @@ const Search = () => {
                     }
                 })
                 setResults(data.query.search)
-                console.log(results)
+                // console.log(results)
                 
             }
             catch (e) {
